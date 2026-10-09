@@ -1,5 +1,10 @@
-export const orthographyUseCases = async () => {
+interface Options {
+  prompt: string;
+}
+
+export const orthographyUseCases = async (options: Options) => {
+  const { prompt } = options;
   return {
-    hola: 'Desde Use Cases',
+    prompt,
   };
 };
